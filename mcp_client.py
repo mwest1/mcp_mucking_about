@@ -22,10 +22,12 @@ async def run():
 
             # List available tools to confirm what’s there
             tools = await session.list_tools()
-            print("\n=== Available Tools ===")
-            for tool in tools:
-                print(f"- {tool}")
-            print("========================\n")
+            tools = tools["tools"]
+            print(tools)
+            # print("\n=== Available Tools ===")
+            # for tool in tools:
+            #     print(f"- {tool}")
+            # print("========================\n")
 
             # Get a math expression from the user
             expression = input("Enter a math expression (e.g., '5 * 7'): ")
