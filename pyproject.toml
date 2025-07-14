@@ -10,5 +10,6 @@ dependencies = [
     "llama-index-llms-ollama>=0.6.2",
     "llama-index-tools-mcp>=0.2.6",
     "mcp>=1.10.1",
+    "mcp-server>=0.1.4",
     "python-dotenv>=1.1.1",
 ]
