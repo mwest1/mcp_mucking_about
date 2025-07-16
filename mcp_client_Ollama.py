@@ -8,7 +8,7 @@ mcp_client = BasicMCPClient("http://localhost:8888/mcp")  # Point to your MCP se
 mcp_tool_spec = McpToolSpec(client=mcp_client)
 
 # Initialize Llama 3.1 via Ollama
-llm = Ollama(model="llama3.2:1b", request_timeout=30.0)
+llm = Ollama(model="llama3.1:latest", request_timeout=30.0, base_url="http://10.54.4.224:11434")
 
 
 # Get tools from the MCP server
@@ -34,4 +34,4 @@ async def run_agent(query: str):
 
 # Example usage
 if __name__ == "__main__":
-    asyncio.run(run_agent("List the contents of the current directory"))
+    asyncio.run(run_agent("Tell me the hourly rate for a Software Engineer and evaluate the expression '2 + 2 * 3'."))
