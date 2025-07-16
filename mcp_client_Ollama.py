@@ -34,4 +34,4 @@ async def run_agent(query: str):
 
 # Example usage
 if __name__ == "__main__":
-    asyncio.run(run_agent("Tell me the hourly rate for a Software Engineer and evaluate the expression '2 + 2 * 3'."))
+    asyncio.run(run_agent("Tell me the hourly rate for a Software Engineer"))
